@@ -1,0 +1,10 @@
+^C:\USERS\ADMINISTRATOR\DESKTOP\研二\ALGORITHM-DESIGN\BUILD\CMAKEFILES\C6290313D8840D0AC5A2A8C0E1C1B6A3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/研二/Algorithm-design -BC:/Users/Administrator/Desktop/研二/Algorithm-design/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Administrator/Desktop/研二/Algorithm-design/build/algorithm.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
